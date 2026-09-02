@@ -74,14 +74,14 @@ function App(){
         <section className="section services" id="services">
           <SectionTitle title="Services" subtitle="Here are the services I can provide."/>
           <div className="service-list">{services.map((service,i)=><div key={service}><span>0{i+1}</span><h3>{service}</h3><b>↗</b></div>)}</div>
-          <div className="service-contact"><p>Please email me your query!</p><a href="mailto:walia4shubham@gmail.com">walia4shubham@gmail.com</a><span>OR</span><a href="tel:+9199885886633">Call me directly</a></div>
+          <div className="service-contact"><p>Please email me your query!</p><a href="mailto:walia4shubham@gmail.com">walia4shubham@gmail.com</a></div>
         </section>
 
         <section className="section portfolio" id="portfolio">
           <SectionTitle title="Portfolio" subtitle="This is my personal portfolio."/>
           <div className="bio"><h3>🙏🏻 I&apos;m a software engineer with 5+ years of experience building and scaling production-grade web applications.</h3><p>I enjoy learning new technologies and turning business ideas into reliable digital products. My work covers frontend, backend, databases, cloud deployment and product delivery.</p></div>
           <div className="timeline">{timeline.map(([year,role,company])=><article key={role}><h4>{year}</h4><div><h3>{role}</h3><p>At {company}</p></div></article>)}</div>
-          <div className="exploring"><p>Exploring new opportunities!</p><a href="mailto:walia4shubham@gmail.com">Get my resume ↗</a></div>
+          <div className="exploring"><p>Exploring new opportunities!</p><a href="/Shubham_Singh_Full_Stack_Developer_Resume.pdf" target="_blank" rel="noreferrer">View Resume ↗</a></div>
           <div className="skill-row">{skills.map(([name,Icon])=><div key={name}><Icon/><span>{name}</span></div>)}</div>
           <div className="profiles"><h3>Check out my profile at:</h3><a href="https://github.com/walia4shubham" target="_blank" rel="noreferrer"><SiGithub/> Github/Shubham</a><a href="https://www.linkedin.com/in/shubham-singh-114473163/" target="_blank" rel="noreferrer"><FaLinkedinIn/> Linkedin/Shubham</a></div>
         </section>
